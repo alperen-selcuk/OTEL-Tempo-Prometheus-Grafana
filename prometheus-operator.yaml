@@ -1,0 +1,17 @@
+prometheusOperator:
+  enabled: true
+  fullnameOverride: prometheus-operator
+  manageCrds: true
+
+alertmanager:
+  enabled: false
+grafana:
+  enabled: false
+prometheus:
+  enabled: false
+prometheus-node-exporter:
+  enabled: false
+nodeExporter:
+  enabled: false
+kubeStateMetrics:
+  enabled: false

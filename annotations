@@ -1,0 +1,4 @@
+spec:
+  metadata:
+    annotations:
+      instrumentation.opentelemetry.io/inject-dotnet: 'monitoring/app-instrumentation'

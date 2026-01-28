@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: prometheus
+  namespace: monitoring
+spec:
+  enableRemoteWriteReceiver: true
+  enableFeatures:
+    - remote-write-receiver
+  evaluationInterval: 30s
+  imagePullPolicy: IfNotPresent
+  replicas: 1
+  retention: 10d
+  scrapeInterval: 30s
